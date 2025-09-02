@@ -32,4 +32,15 @@ We use RTX A6000 GPU with 48G memory to run these adaptation experiments. To rep
 
 To fine-tune an adapter, run a script in `./train` by a corresponding task. You need to set arguments for a base model, training details, and adapter configurations. After fine-tuning an adapter, scripts in `./eval` are prepared for model evaluation. Please set identical adapter settings as fine-tuning, and specify the base or adaptation model with corresponding arguments.
 
+## Citation
 
+If you find this repo is useful, please cite our paper. Thanks.
+
+```bibtex
+@article{ASiM,
+  title={ASiM: Improving Transparency of SRAM-based Analog Compute-in-Memory Research with an Open-Source Simulation Framework},
+  author={Zhang, Wenlun and Ando, Shimpei and Chen, Yung-Chin and Yoshioka, Kentaro},
+  journal={arXiv:2411.11022},
+  year={2024}
+}
+```
