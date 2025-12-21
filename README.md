@@ -39,10 +39,10 @@ To fine-tune an adapter, run a script in `./train` by a corresponding task. You 
 If you find this repo is useful, please cite our paper. Thanks.
 
 ```bibtex
-@article{ASiM,
-  title={ASiM: Improving Transparency of SRAM-based Analog Compute-in-Memory Research with an Open-Source Simulation Framework},
-  author={Zhang, Wenlun and Ando, Shimpei and Chen, Yung-Chin and Yoshioka, Kentaro},
-  journal={arXiv:2411.11022},
-  year={2024}
+@article{zhang2025bitrom,
+  title={BitROM: Weight Reload-Free CiROM Architecture Towards Billion-Parameter 1.58-bit LLM Inference},
+  author={Zhang, Wenlun and Li, Xinyu and Ando, Shimpei and Yoshioka, Kentaro},
+  journal={arXiv preprint arXiv:2509.08542},
+  year={2025}
 }
 ```
