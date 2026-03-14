@@ -24,7 +24,7 @@ lm-eval==0.3.0
 
 ### 3.1. Abstract
 
-[Paper Link](https://arxiv.org/abs/2509.08542)
+[Paper Link](https://ieeexplore.ieee.org/abstract/document/11420813)
 
 Compute-in-Read-Only-Memory (CiROM) accelerators offer outstanding energy efficiency for CNNs by eliminating runtime weight updates. However, their scalability to Large Language Models (LLMs) is fundamentally constrained by their vast parameter sizes. Notably, LLaMA-7B - the smallest model in LLaMA series - demands more than 1,000 cm2 of silicon area even in advanced CMOS nodes. This paper presents BitROM, the first CiROM-based accelerator that overcomes this limitation through co-design with BitNet's 1.58-bit quantization model, enabling practical and efficient LLM inference at the edge. BitROM introduces three key innovations: 1) a novel Bidirectional ROM Array that stores two ternary weights per transistor; 2) a Tri-Mode Local Accumulator optimized for ternary-weight computations; and 3) an integrated Decode-Refresh (DR) eDRAM that supports on-die KV-cache management, significantly reducing external memory access during decoding. In addition, BitROM integrates LoRA-based adapters to enable efficient transfer learning across various downstream tasks. Evaluated in 65nm CMOS, BitROM achieves 20.8 TOPS/W and a bit density of 4,967 kB/mm2 - offering a 10x improvement in area efficiency over prior digital CiROM designs. Moreover, the DR eDRAM contributes to a 43.6% reduction in external DRAM access, further enhancing deployment efficiency for LLMs in edge applications.
 
@@ -39,10 +39,12 @@ To fine-tune an adapter, run a script in `./train` by a corresponding task. You 
 If you find this repo is useful, please cite our paper. Thanks.
 
 ```bibtex
-@article{zhang2025bitrom,
+@inproceedings{zhang2026bitrom,
   title={BitROM: Weight Reload-Free CiROM Architecture Towards Billion-Parameter 1.58-bit LLM Inference},
   author={Zhang, Wenlun and Li, Xinyu and Ando, Shimpei and Yoshioka, Kentaro},
-  journal={arXiv preprint arXiv:2509.08542},
-  year={2025}
+  booktitle={2026 31st Asia and South Pacific Design Automation Conference (ASP-DAC)},
+  pages={547--553},
+  year={2026},
+  organization={IEEE}
 }
 ```
